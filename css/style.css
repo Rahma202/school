@@ -1,8 +1,11 @@
 /**************************************/
 /************ General CSS *************/
 /**************************************/
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Noto+Nastaliq+Urdu:wght@400..700&family=Ruwudu:wght@400;500;600;700&display=swap');
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Ruwudu", serif;
+    font-weight: 400;
+    font-style: normal;
     background: #ffffff;
     direction: rtl;
 }
@@ -26,17 +29,7 @@ p {
     padding: 0;
     margin: 0 0 15px 0;
 }
-.beau-rivage-regular {
-        font-family: "Lobster", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      
-  }
-  .gulzar-regular {
-    font-family: "Gulzar", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+
   
 
 h1,
@@ -103,7 +96,16 @@ img {
     color: rgba(17, 13, 13, 0.5);
     border-color: rgba(0, 0, 0, .1);
 }
-
+.about li{
+    list-style: none;
+    font-size: 30px;
+    text-align: start;
+}
+.about ul li i{
+    font-size: 20px;
+    margin: 4px;
+    color: #9b9999;
+}
 /**************************************/
 /************** Nav CSS ***************/
 /**************************************/
@@ -217,7 +219,6 @@ img {
     display: inline-block;
     color: #ffffff;
     font-size: 80px;
-    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 40px;
     padding-bottom: 45px;
@@ -440,12 +441,32 @@ p{
     display: flex;
     justify-content: space-between;
 }
+.team-img{
+    position: relative;
+}
+.team-img:hover .team-img{
+    transform: scale(1.6);
+    
+}
+
+.team-contact{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color:rgba(0, 0, 0, .4);
+}
 .team .btn {
-    padding: 15px 35px;
+    position: absolute;
+    bottom:50px ;
+    right: 10px;
     color: #ffffff;
     font-size: 22px;
-    font-weight: 500;
-    background: #FF6F61;
+    font-weight: 100;
 }
 .team .team-item {
     margin-bottom: 30px;
@@ -791,6 +812,10 @@ p{
     color: #FF6F61;
     margin: auto;
     margin-bottom: 20px;
+}
+.review-client p{
+    text-align: center;
+    font-weight: 400;
 }
 .review-client .content{
     margin-top: 10px;
